@@ -12,6 +12,7 @@ game.state.add('state9', demo.state9);
 game.state.start('state0'); 
 
 function changeState(i, stateNum){ 
+    console.log('state ' + stateNum)
     game.state.start('state' + stateNum);
 }
 

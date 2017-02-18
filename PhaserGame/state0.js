@@ -12,8 +12,7 @@ demo.state0.prototype = {
     },
     create: function(){
         game.physics.startSystem(Phaser.Physics.ARCADE);
-        game.stage.backgroundColor = '#000000';
-        console.log('state0'); 
+        game.stage.backgroundColor = '#000000'; 
         addChnageStateEventListeners();
         game.world.setBounds(0,0, 2813, 1000);
         game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
