@@ -19,6 +19,22 @@ function human(name, age){
     this.age = age;
 }
 
+function a (a,b){
+    this.a = a;
+    this.b = b;
+};
+function prototypeExampe (){
+    var hello = new a(1,2);
+    var world = new a(4,5);
+    console.log(hello.a);
+    console.log(world.a);
+    //hello.c = 10;
+    a.prototype.c = 10;
+    console.log(hello.c);
+    console.log(world.c);
+    
+};
+
 window.onload = function() {
     console.log("Hello");
     console.log(object);
@@ -58,4 +74,6 @@ window.onload = function() {
     bob.run();
     console.log(bob);
     var number = 1 < 3 ? 123 : 321;
+    console.log("...........");
+    prototypeExampe();
 };
